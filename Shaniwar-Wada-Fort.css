@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR STARTS */
+
+nav {
+  padding: 30px 30px;
+  margin-bottom: 70px;
+  font-size: 1em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 1em;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-links ul li h1 {
+  font-size: 35px;
+  color: teal;
+  padding-right: 40px;
+}
+
+.nav-links ul li .search-bar h1 {
+  background: white;
+  font-size: 20px;
+  color: gray;
+  display: inline-block;
+}
+
+.search-bar {
+  transform: translateX(4em);
+}
+.search-bar input {
+  width: 400px;
+  height: 30px;
+  display: inline-block;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 150px;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.search-bar .search-icon {
+  display: inline-block;
+}
+
+.register ul li {
+  display: inline-block;
+
+  padding: 0 15px;
+}
+
+.register ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: black;
+  border: 2.5px solid #fff;
+  border-radius: 8px;
+  padding: 8px 22px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.sign-up {
+  background: #95d5b2;
+  transition: 1s;
+}
+
+/* media queryfor navbar */
+@media (max-width: 1150px) {
+  .nav-links ul li a h1 {
+    display: block;
+  }
+
+  .register {
+    display: none;
+  }
+
+  .search-bar input {
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px;
+  }
+  .search-bar {
+    align-items: center;
+  }
+}
+/* media queryfor navbar */
+/* NAVBAR END */
+
+/* fort-details */
+.img-main h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5em;
+}
+.img-main h1::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: teal;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.img-main h1:hover::after {
+  width: 20%;
+}
+.img-main img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  height: 90vh;
+  border: 1px solid teal;
+}
+.img-sub {
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+}
+.img-sub img {
+  width: 280px;
+  height: 230px;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.fort-information {
+  width: 70%;
+  transform: translateX(22%);
+}
+.fort-information h1 {
+  font-size: 2em;
+}
+.fort-information p {
+  text-align: center;
+  margin: 50px;
+  font-size: 1.28em;
+  font-weight: 600;
+}
+
+.fort-location {
+  width: 70%;
+  /* transform: translateX(22%); */
+  display: block;
+  margin: 0 auto;
+}
+
+.fort-location h1 {
+  font-size: 2em;
+}
+.fort-location .location {
+  margin: 50px;
+  text-align: center;
+}
+
+/* media query fo fort details */
+
+/* media queryfor navbar */
+@media (max-width: 1253px) {
+  .img-main img {
+    width: 800px;
+    height: 450px;
+  }
+  .img-sub {
+    flex-direction: column;
+    margin: 40px;
+    align-items: center;
+  }
+  .img-sub img {
+    width: 280px;
+    height: 230px;
+    margin: 20px 20px;
+  }
+  .fort-information h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .fort-location {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+    flex-direction: column;
+  }
+  .location iframe {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 828px) {
+  .img-main img {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 623px) {
+  .img-main img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+/* media query fo fort details */
+
+/* Fort-Details */
+
+/* SIMILAR FORTS*/
+
+.famous-fort-container {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+.famous-fort-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.three-famous-fort {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.information {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  background-color: #d8e2dc;
+}
+
+.information img {
+  width: 350px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.information h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.information h2 a {
+  text-decoration: none;
+  color: #424242;
+}
+.information h3 {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.information h4 {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.rating {
+  padding: 5px;
+}
+.rating .fa {
+  color: #ff523b;
+}
+
+/* media query fo similar details */
+@media (max-width: 1192px) {
+  .three-famous-fort {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .information {
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    background-color: #d8e2dc;
+  }
+
+  .information img {
+    width: 300px;
+    height: 220px;
+    border-radius: 30px;
+  }
+}
+
+/* media query fo similar details */
+
+/* SIMILAR FORTS*/
+
+/* footer  */
+
+footer {
+  width: 100%;
+  background-color: #38a3a5;
+}
+.footer {
+  padding: 50px 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-container {
+  padding: 10px;
+}
+.footer-container ul li {
+  padding: 5px;
+  list-style: none;
+  font-size: 1em;
+}
+
+.footer-container ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .footer-container-logo ul img {
+} */
+
+.footer-container-logo ul li {
+  padding: 20px;
+  text-align: center;
+  list-style: none;
+  font-size: 1em;
+}
+
+.footer-container-logo ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* footer  */
+
+/* footor media query */
+@media (max-width: 1150px) {
+  .footer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer-container ul li {
+    text-align: center;
+    padding: 5px;
+    list-style: none;
+    font-size: 0.8em;
+  }
+}
+
+/* footor media query */
